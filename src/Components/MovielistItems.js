@@ -9,11 +9,6 @@ function MovielistItems(props) {
     if (props.movielist) {
       movielisting = props.movielist.map(movie => (
 
-        
-      
-       
-
-
         <div className="col-md-4"  key={movie.imdbID}>
           <div className="card mb-4 box-shadow">
             <img className="card-img-top"  style={{height: '225px', width: '100%', display: 'block'}} 
@@ -24,7 +19,7 @@ function MovielistItems(props) {
               <p className="card-text">Name : {movie.Title}</p>
                 
               <p className="card-text">Year : {movie.Year}</p>
-              <p className="card-text">imdbID : {movie.imdbID}</p>
+              <p className="card-text">ImdbID : {movie.imdbID}</p>
               <p className="card-text">Type : {movie.Type}</p>
              
             </div>
